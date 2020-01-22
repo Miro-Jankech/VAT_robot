@@ -51,7 +51,7 @@
         <av:Point x:Key="ShapeLocation">10,172.5</av:Point>
         <av:Size x:Key="ShapeSize">60,75</av:Size>
         <x:Double x:Key="Width">1084</x:Double>
-        <av:PointCollection x:Key="ConnectorLocation">40,247.5 40,417.5 140,417.5</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">70,210 260,210</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
@@ -60,11 +60,11 @@
     <FlowStep x:Name="__ReferenceID0">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">140,384.5</av:Point>
+          <av:Point x:Key="ShapeLocation">260,177</av:Point>
           <av:Size x:Key="ShapeSize">200,66</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Sequence for logon script" sap:VirtualizedContainerService.HintSize="476,1435" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence DisplayName="Sequence for logon script" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -165,18 +165,6 @@
             </ActivityAction>
           </ui:WindowScope.Body>
         </ui:WindowScope>
-        <ui:CloseApplication DisplayName="Close Application 'cmd.exe  C:\WINDOWS\sys...'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
-          <ui:CloseApplication.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="075c4447f5da019a8ab16f191def3016" Selector="&lt;wnd app='cscript.exe' cls='ConsoleWindowClass' title='C:\Windows\System32\cscript.exe' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:CloseApplication.Target>
-        </ui:CloseApplication>
         <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="&gt;&gt;&gt; Telenet logon script completed" />
       </Sequence>
     </FlowStep>
